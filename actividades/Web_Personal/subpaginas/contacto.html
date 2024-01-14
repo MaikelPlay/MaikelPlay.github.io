@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+    <style>
+        h1 {color:rgb(251, 251, 251); font-size: 20px ;font-family: 'Young Serif', serif;}
+        p {color:black; font-size: 13px ;}
+        h2 {color:black; font-size: 20px; text-align: center;}  
+        header {    width: 100%;height: 60px;background-color: darkslategray;display: flex;
+                    justify-content: space-between;align-items: center;}
+        body {background-color: rgb(228, 228, 228); margin: 0; padding: 0;font-family: 'Young Serif', serif; overflow-x: hidden; }
+        ul {list-style: none;}
+        li {color:rgb(251, 251, 251); margin: 0em 0.5em;}
+        a {color: white; text-decoration: none;}
+        a:hover{color: rgb(0, 161, 167);}
+        .titulo {color:white; font-size: 60px; margin:0; padding-top: 150px;}
+        .banner {padding: 0 100px;}
+        .listaimgdiv{padding: 0 70px;}
+
+    </style>
+</head>
+    <body>
+        <header style="width: 100%;height: 60px;background-color: darkslategray; display: flex;">
+        
+            <div style="display: flex;"> 
+                <img style="margin: 0.5em 1em;" src="../img/iconoweb.png" alt="icono" height="40">
+                <h1><a href="../index.html"> Mi Web</a></h1> 
+            </div>
+            <div class="menu" style=" margin-right: 10%">
+                <ul style="display: flex;">
+                  <li><a href="aficiones.html">Aficiones</a></li>
+                   <li><a href="musica.html">Música</a></li>
+                   <li><a href="peliculas.html">Películas</a></li>
+                   <li><a href="libros.html">Libros</a></li>
+                    <li><a href="viajes.html">Viajes</a> </li>
+                    <li><a href="subpaginas/contacto.html">Contacto</a> </li>
+                </ul>
+            </div>
+        </header>    
+                <div class="banner" style="background-image: url(../img/contactoimg.jpg); width: 100%; height: 400px; background-size: cover; background-position:bottom;">
+                <div><h1 class="titulo">Contacto</h1></div>
+                </div>
+                <div class="listaimgdiv">
+                    <h2>Rellena con tus datos personales para poder ponernos en contacto contigo:</h2>
+                </div>
+                <form class="formulario">
+                    <fieldset>  
+                        <legend>Datos de contacto</legend>
+                        Nombre:     <input type="text" maxlength="10" size="21" required><br>
+                        Apellidos:     <input type="text" maxlength="10" size="21" required><br>
+                        Dirección:  <input type="text" name="apellidos" maxlength="50" size="20"><br>
+                        Teléfono:   <input type="password" name="contraseña" maxlength="15" size="19"><br>
+                        <label for="email">Email</label> <input type="email" placeholder="ejemplo@gmail.com" name="usrmail" required><br>
+                        <label for="ed">Edad</label>  <input type="number"  min="14" max="80" name="edad" size="2"><br>
+                        <label for="fn">Fecha nacimiento</label> <input type="date" name="cumple" required><br>
+                        Información adicional: <br>
+                        <textarea name="mensaje" rows="15" cols="50"> </textarea><br>
+                    
+                    
+                        <legend><b>Quieres recibir las newletters de nuestra página web semanalmente en tu correo?</b></legend>   
+                        <input type="checkbox" name="si" value="Si" checked="checked">Sí<br>
+                        <input type="checkbox" name="no" value="No">No<br>
+                        <input type="checkbox" name="adelante" value="adelante">Más tarde<br>
+                    <input  type="submit" name="enviar" value="Enviar">
+                    <input type="reset" name="limpiar" value="Borrar datos">
+                </fieldset>
+              </form>
+    </body>
+</html>

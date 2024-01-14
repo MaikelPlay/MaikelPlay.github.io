@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      body  {
+            background-image:  url(img/fondopizza.jpg);
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: white; 
+            
+          }
+          fieldset {
+            padding: 20px;
+          }
+          h1 {color: white;}
+          .formulario {padding-left: 40%;}
+    </style>
+    </head>
+    <body>
+        <form class="formulario">
+            <h1>Pedido de pizza</h1>
+          
+            
+            <fieldset>
+                <legend>La pizza</legend>
+                Ingredientes<br>
+                <br>
+                <input type="checkbox" name="mozzarella" value="Mozarella"> Mozarella<br>
+                <input type="checkbox" name="roquefort" value="Roquefort"> Roquefort<br>
+                <input type="checkbox" name="pimiento" value="Pimiento"> Pimiento<br>
+                <input type="checkbox" name="cebolla" value="Cebolla"> Cebolla<br>
+                <input type="checkbox" name="bacon" value="Bacon"> Bacon<br>
+                <input type="checkbox" name="jamon york" value="Jamon york"> Jamon york<br>
+                <input type="checkbox" name="salchichon" value="Salchichon"> Salchichon<br>       
+                <br>
+                Tamaño<br>
+                <br>
+                <input  type="radio" name="pequeña" value="Pequeña"> Pequeña<br>
+                <input  type="radio" name="mediana" value="Mediana"> Mediana<br>
+                <input  type="radio" name="grande" value="Grande"> Grande<br>
+                <br>
+            </fieldset>
+
+            <fieldset>  
+                <legend>Datos de entrega</legend>
+                Nombre:     <input type="text" maxlength="10" size="21"><br>
+                Dirección:  <input type="text" name="apellidos" maxlength="50" size="20"><br>
+                Teléfono:   <input type="password" name="contraseña" maxlength="15" size="19"><br>
+                Instrucciones especiales<br>
+                <textarea name="mensaje" rows="15" cols="50"> </textarea><br>
+            </fieldset>
+            <fieldset>
+                <legend>Método de pago</legend>
+                    <select>
+                    <option value="" selected="selected">Efectivo</option>
+                    <option value="tarjeta">Tarjeta</option>
+                    <option value="bizum">Bizum</option>
+                    <option value="paypal">Paypal</option>
+
+                    </select>
+            </fieldset>
+            <input  type="submit" name="ok" value="Ok">
+
+      </form>
+
+
+
+    </body>
+    </html>

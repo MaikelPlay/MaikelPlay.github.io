@@ -1,0 +1,18 @@
+.basedatos{background-color: rgb(208, 58, 58);}
+.ingles {background-color: rgb(100, 189, 100);}
+.lenguajes {background-color: rgb(81, 81, 206);}
+.programacion {background-color: red;}
+.formacion {background-color: rgb(177, 175, 175);}
+.entornos {background-color: rgb(95, 215, 215);}
+.sistemas {background-color: rgb(255, 145, 0);}
+.tutoria {background-color: rgb(176, 58, 162);}
+
+
+
+table,td, th{border: 1px solid rgb(202, 202, 202) }
+td {text-align: center;}
+th {background-color: rgb(202, 202, 202); color: white;}
+table {margin-left: auto;margin-right: auto;}
+caption {margin-left: 50px}
+h2 {margin-left: 50px ; text-align: center;}
+caption {color: gray;}
